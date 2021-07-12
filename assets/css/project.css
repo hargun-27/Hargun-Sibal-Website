@@ -1,0 +1,68 @@
+/* ===== PROJECT HEADER =====*/
+.my-padding{
+    margin-bottom: 4rem;
+}
+
+.project-subtitle{
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+}
+
+.case-study{
+    margin-bottom: 3rem;
+}
+
+.list{
+    line-height: 2.5rem;
+}
+
+.link{
+    font-weight: 700;
+}
+
+.code1{  
+    display: block;
+    margin-top: 0.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.wireframe{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.prototype{
+    margin-bottom: 5rem;
+}
+
+figure {
+    display: table;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: top;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.image {
+    margin-top: 1rem;
+}
+
+.bottom-caption {
+    caption-side: bottom;
+    margin-bottom: 3rem;
+}
+
+.less-top-padding {
+    margin-top: -2rem;
+    padding-top: 0;
+}
+

@@ -34,6 +34,7 @@
 
 
 </head>
+
 <body>
 
     <!-- ===== NAVIGATION ===== -->
@@ -64,67 +65,124 @@
         </div>
     </nav>
 
-    <main class="container text-center">
-        <h3>Working on this page now :)</h3>
-        <br><br><br><br>
+    <main class="main">
+        <section class="work container">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-med-12 col-sm-12">
+                        <h2>Work Experience</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content"><b>Deloitte - Front End Engineer</b> <br>
+                        Jan 2022 - Apr 2022
+                    </div>
+                    <div class="card-content2">
+                        <div class="card-info">Currently working here!
+                        </div>
+                        
+                    </div>
+                    <div class="box" id="deloitte">
+                        <img class="deloitte-card" src="assets/img/deloitte.jpg"
+                            style="width:200px; height:200px; border-radius: 8px;">
+                        <div class="text">Front End Engineer Intern</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <br>
+                    <br>
+                    <div class="card-content"><b>Hatch - Software Developer</b> <br>
+                        Jun 2021 - Aug 2021
+                    </div>
+                    <div class="card-content2">
+                        <div class="card-info">● Developed a vision system in a coilbox circulatory plant
+                            using Python, OpenCV, and Scikit-Image libraries to identify
+                            poor shapes and improve accuracy by 100%<br>
+                            ● Improved edge detection and eliminated obstructions in
+                            images by 90% by applying filtering techniques in Python,
+                            including RANSAC, convex hull mapping algorithms, and
+                            background subtraction
+                        </div>
+                        
+                    </div>
+                    <div class="box" id="deloitte">
+                        <img class="deloitte-card" src="assets/img/hatch.png"
+                            style="width:200px; height:200px; border-radius: 8px;">
+                        <div class="text">Software Developer Intern</div>
+                    </div>
+                </div>
+        </section>
+        <section class="school container">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-med-12 col-sm-12">
+                        <br>
+                        <h2>Engineering Blogs</h2>
+                        <hr>
+                    </div>
+                </div>
+        </section>
+
     </main>
 
-<!-- ===== FOOTER ===== -->
-<section id="contact">
-    <div class="container text-center">
-        <div class="row">
 
-            <p class="contact__description">Like what you see?</p>
-            <p class="contact__description">Let's keep the conversation going!</p>
-            <div class="contact__icons text-center">
-                <div class="contact__icons">
-                    <a href="mailto: hsibal@uwaterloo.ca" target="_blank" class="contact__email">
-                        <img src="assets/img/email.png" class="grow" width="60">&nbsp&nbsp</a>
-                    <a href="https://www.linkedin.com/in/hargunsibal/" target="_blank"
-                        class="contact__linkedin"><img src="assets/img/linkedin.png" class="grow"
-                            width="60">&nbsp&nbsp</a>
-                    <a href="https://github.com/hargun-27" target="_blank" class="contact__github">
-                        <img src="assets/img/github.png" class="grow" width="60">&nbsp&nbsp</a>
+    <!-- ===== FOOTER ===== -->
+    <section id="contact">
+        <div class="container text-center">
+            <div class="row">
+
+                <p class="contact__description">Like what you see?</p>
+                <p class="contact__description">Let's keep the conversation going!</p>
+                <div class="contact__icons text-center">
+                    <div class="contact__icons">
+                        <a href="mailto: hsibal@uwaterloo.ca" target="_blank" class="contact__email">
+                            <img src="assets/img/email.png" class="grow" width="60">&nbsp&nbsp</a>
+                        <a href="https://www.linkedin.com/in/hargunsibal/" target="_blank"
+                            class="contact__linkedin"><img src="assets/img/linkedin.png" class="grow"
+                                width="60">&nbsp&nbsp</a>
+                        <a href="https://github.com/hargun-27" target="_blank" class="contact__github">
+                            <img src="assets/img/github.png" class="grow" width="60">&nbsp&nbsp</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+    </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="container text-center">
+        <p class="footer-text">Created and designed by Hargun Sibal 2021</p>
     </div>
 
-</section>
+    <!-- ===== MAIN JS ===== -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 
-</main>
+    <script>
 
-<!-- ===== FOOTER ===== -->
-<div class="container text-center">
-<p class="footer-text">Created and designed by Hargun Sibal 2021</p>
-</div>
+        // Changing the defaults
+        window.sr = ScrollReveal({
+            origin: 'top',
+            distance: '80px',
+            duration: 2000,
+            reset: true
+        });
 
-<!-- ===== MAIN JS ===== -->
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+        // Customizing a reveal set
+        sr.reveal('.about', {});
 
-<script>
+        sr.reveal('.projects__header', {});
 
-// Changing the defaults
-window.sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-});
+        sr.reveal('.contact__email', { origin: 'bottom' });
+        sr.reveal('.contact__linkedin', { origin: 'bottom', delay: 200 });
+        sr.reveal('.contact__github', { origin: 'bottom', delay: 400 });
+        sr.reveal('.contact__instagram', { origin: 'bottom', delay: 600 });
 
-// Customizing a reveal set
-sr.reveal('.about', {});
-
-sr.reveal('.projects__header', {});
-
-sr.reveal('.contact__email', { origin: 'bottom' });
-sr.reveal('.contact__linkedin', { origin: 'bottom', delay: 200 });
-sr.reveal('.contact__github', { origin: 'bottom', delay: 400 });
-sr.reveal('.contact__instagram', { origin: 'bottom', delay: 600 });
-
-</script>
-<script src="assets/js/main.js"></script>
+    </script>
+    <script src="assets/js/main.js"></script>
 
 
 

@@ -44,6 +44,12 @@
     }
 }
 
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
 /*===== HOVER =====*/
 .grow{
     transition: all .2s ease-in-out;
@@ -253,6 +259,129 @@ a:active{
     color: #eef5ff;
 }
 
+/*====ENGINEERING====*/
+.work {
+    position: relative;
+}
+
+.work .serv-content .card{
+    width: 500px;
+    height: 400px;
+    background: #efefef;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.work .serv-content .card:hover{
+    background: #082536;
+    content: "";
+}
+.work .serv-content .card:hover::after{
+    content: "";
+}
+
+.work .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.work .serv-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.work .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 50px 0 7px 0;
+}
+
+.card{
+    position: relative;
+}
+
+.card-content {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    vertical-align: middle;
+    background-color: #082536;
+    display: none;
+    color:#fbfeff;
+    text-align: center;
+}
+
+.card:hover .card-content 
+{
+    display: block;
+    z-index:11;
+    border-radius: 6px;
+    margin-top: 27px;
+}
+
+.card:hover .card-content1 {
+    display: block;
+    z-index:11;
+    border-radius: 6px;
+}
+
+.card-content2{
+    position: absolute;
+    margin: 0;
+    top: 111px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    vertical-align: middle;
+    background-color: #efefef;
+    opacity:0.98;
+    display: none;
+}
+    
+.card:hover .card-content2 {
+    display: block;
+    z-index:11;
+    border-radius: 6px;
+    color:black;
+}   
+
+a:hover{
+    -webkit-text-fill-color: white;
+}
+
+.box .text:hover{
+    -webkit-text-fill-color: white;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e9e9e9;
+    padding: 5px;
+    border-radius:6px;
+}
+
+.card-info {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 26px;
+    margin-right: 7px;
+    padding: 11px;
+}
+
 /*==== PROJECTS ====*/
 #projects{
     padding-bottom: 6rem;
@@ -369,3 +498,55 @@ a:active{
 
 }
 
+.spotify-button {
+    position: relative;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.spotify-button::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    text-decoration: none;
+}
+
+.spotify-button:hover{
+    background: #1DB954;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #1DB954, 0 0 25px #1DB954, 0 0 50px #1DB954, 0 0 200px #1DB954;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .max-width{
+        max-width: 930px;
+    }
+   
+    .work .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+
+    .work .serv-content .card{
+        width: 100%;
+    }
+}

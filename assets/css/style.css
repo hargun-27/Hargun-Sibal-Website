@@ -355,7 +355,7 @@ a:active{
 }   
 
 a:hover{
-    -webkit-text-fill-color: rgb(140, 190, 247);
+    -webkit-text-fill-color: rgb(12, 34, 78);
 }
 
 .box .text:hover{

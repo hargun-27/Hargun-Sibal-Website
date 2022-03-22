@@ -171,8 +171,8 @@ a:link{
 }
 
 a:hover{
-    color:#1f3d91;
-    
+    color:#143591;
+    text-decoration: none;
     background-color: transparent;
 }
 
@@ -354,9 +354,6 @@ a:active{
     color:black;
 }   
 
-a:hover{
-    -webkit-text-fill-color: rgb(150, 165, 196);
-}
 
 .box .text:hover{
     -webkit-text-fill-color: white;

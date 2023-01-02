@@ -1,30 +1,10 @@
-var app = document.getElementById('app');
+let menu = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".nav");
 
-var typewriter = new Typewriter(app, {
-  loop: false,
-  delay: 75,
+menu.addEventListener("click", function() {
+  navbar.classList.toggle("active");
 });
 
-
-typewriter
-  .pauseFor(1000)
-  .typeString('Hi, I\'m Hargun')
-  .start();
-
-/*== MENU SHOW ==*/
-const navMenu = document.getElementById('nav-menu'),
-    toggleMenu = document.getElementById('nav-toggle'),
-    closeMenu = document.getElementById('nav-close')
-
-    // SHOW
-    toggleMenu.addEventListener('click', ()=>{
-        navMenu.classList.toggle('show')
-    })
-
-    // HIDDEN
-    closeMenu.addEventListener('click', ()=>{
-        navMenu.classList.remove('show')
-    })
-
-navLink.forEach( n => n.addEventListener('click', linkAction))
-
+window.onscroll = () => {
+  navbar.classList.remove("active");
+};

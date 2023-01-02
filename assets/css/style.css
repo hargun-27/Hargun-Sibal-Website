@@ -422,10 +422,6 @@ a:active{
 }
 
 /*==== PROJECTS ====*/
-#projects{
-    padding-bottom: 6rem;
-}
-
 .project{
     position: relative;
     padding: 0;

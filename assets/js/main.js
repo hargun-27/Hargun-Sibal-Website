@@ -1,14 +1,6 @@
 let menu = document.querySelector(".menu-btn");
 let navbar = document.querySelector(".nav");
 
-menu.addEventListener("click", function() {
-  navbar.classList.toggle("active");
-});
-
-window.onscroll = () => {
-  navbar.classList.remove("active");
-};
-
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 
@@ -21,3 +13,14 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+menu.addEventListener("click", function() {
+  navbar.classList.toggle("active");
+});
+
+window.onscroll = () => {
+  navbar.classList.remove("active");
+  menuBtn.classList.remove('open');
+  menuOpen = false;
+};
+

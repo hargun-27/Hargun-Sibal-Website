@@ -115,7 +115,7 @@ h1{
     animation:
         animated-text 2.7s steps(30, end),
         animated-cursor 1000ms steps(30, end) infinite;
-    animation-delay: 2.7s;
+    animation-delay: 2.4s;
   }
   .typewriter {
         display: inline-flex;
@@ -225,6 +225,7 @@ a:active{
     cursor: pointer;
     color: var(--primary-color);
     display: none;
+    padding: 20px;
 }
 
 .menu-btn__burger {
@@ -277,7 +278,7 @@ a:active{
     #menu-icon {
         display: initial;
         position: absolute;
-        top: 65px;
+        top: 50px;
         right: 5%;
     }
     .nav {

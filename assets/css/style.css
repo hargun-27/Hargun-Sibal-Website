@@ -122,16 +122,16 @@ h1{
   }
   @keyframes animated-text {
     from {width: 0}
-    to {width: 540px;}
+    to {width: 535px;}
   }
   @keyframes animated-cursor{
     from {border-right-color: var(--primary-color)}
     to {border-right-color: transparent;}
   }
-  @media (max-width: 767px){
+  @media (max-width: 480px){
     @keyframes animated-text {
         from {width: 0}
-        to {width: 370px;}
+        to {width: 335px;}
     }
   }
   
@@ -279,7 +279,7 @@ a:active{
         display: initial;
         position: absolute;
         top: 50px;
-        right: 5%;
+        right: 0px;
     }
     .nav {
         position: absolute;
@@ -595,7 +595,8 @@ a:active{
     transition: .4s ease-in;
     z-index: 1;
     border-radius: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--title-font) !important;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -607,9 +608,9 @@ a:active{
 }
 
 .spotify-button:hover{
-    background: #89c3dd;
+    background: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #89c3dd, 0 0 25px #89c3dd, 0 0 50px #89c3dd, 0 0 200px #1DB954;
+    box-shadow: 0 0 5px #ffffff, 0 0 200px #ffffff;
     text-decoration: none;
 }
 
@@ -673,6 +674,26 @@ a:active{
 
 .image-grid-row-2 {
 	grid-row: span 2;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Anything udner 1024px */
